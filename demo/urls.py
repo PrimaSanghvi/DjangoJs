@@ -13,4 +13,5 @@ urlpatterns = [
     path('',views.home),
     path('details',views.get_details.as_view({'get': 'list','post': 'create'})),
     path('profileupdate/<str:pk>',views.profileupdate),
+     path('profiledelete/<str:pk>',views.profiledelete),
 ]

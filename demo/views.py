@@ -32,3 +32,7 @@ def profileupdate(request,pk):
             return Response(data=data)        
         return Response(serializer.errors)
     return(HttpResponse("hello"))     
+
+def profiledelete(request,pk):
+    models.ProfileEvaluation.objects.filter(id=pk).delete()
+    return(HttpResponse("hello"))
