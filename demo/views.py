@@ -34,5 +34,5 @@ def profileupdate(request,pk):
     return(HttpResponse("hello"))     
 
 def profiledelete(request,pk):
-    models.ProfileEvaluation.objects.filter(id=pk).delete()
-    return(HttpResponse("hello"))
+    models.Details.objects.filter(id=pk).delete()
+    return(HttpResponse("deleted"))
