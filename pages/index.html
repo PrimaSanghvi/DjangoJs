@@ -1,10 +1,14 @@
-<!DOCTYPE>
+{% comment %} {% load static %}
+<!doctype html>
+
 <html>
 <head>
+<meta charset="utf-8">
 <title>Details</title>
  <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" </script>
  </head>
  <body>
+ <h2>here</h2>
  <div>
  <button class='apireq'> Click Here </button>
  </div>
@@ -30,5 +34,53 @@
 
   <script type ="text/javascript">
   </script>
+   <script src= "{%static 'c.js' %}"
+
  </body>
+<html> {% endcomment %}
+
+{% load static %}
+<!DOCTYPE html>
 <html>
+<head>
+    <meta charset = 'utf-8'>
+    <meta http-equiv = 'X-UA-Compatible' content = 'IE-edge'>
+    <title>Registrations</title>
+    <meta name = 'viewpoint' content ='width=device-width,initial-scale=1'>
+    
+</head>
+<body>
+    
+ <div>
+ <button class='apireq'> Click Here </button>
+ </div>
+
+<div id ="jsonresp" >
+  <p><label>First Name:</label></p>
+  <span id="fname"></span> 
+
+  <p><label>Last Name:</label>
+  <span id="lname"></span> </p>
+
+  <p><label>Street:</label>
+  <span id="street"></span> </p>
+  
+  <p><label>City:</label>
+  <span id="City"></span> </p>
+    
+   <p><label>Pincode:</label>
+  <span id="Pincode"></span> </p>
+
+  <p><label>Age:</label>
+  <span id="Age"></span></p> 
+  </div>
+
+  
+
+  <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" </script>
+     <script type ="text/javascript" src= "{%static 'c.js' %}">
+     </script>
+
+</body>
+</html>
+
